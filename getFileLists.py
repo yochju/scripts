@@ -7,10 +7,18 @@ import os, sys
 # inputFile = sys.argv[-1]
 # root_dir = "/c/projects/uasr-data/izfp-simultrain/common/sig/Z02"
 # path = os.path.join(root_dir, "Z01")
-cwd = os.getcwd()
+# cwd = os.getcwd()
+
+# cwd = "/home/yon47118/project/uasr-data/wildlife/train-class04-aug"
+cwd = "/home/yon47118/project/uasr-data/wildlife/valid-class04-aug"
+
 # outputFile = "train-deer-fight-bing01-all.txt"
-outputFile = "train-deer-fight-bing01-all-main.txt"
-# outputFile = "train-deer-fight-bing01-all-main.txt"
+# outputFile = "train-wildlife04-all.txt"
+# outputFile = "valid-wildlife04-all.txt"
+
+# outputFile = "train-wildlife04-sp-clouds.txt"
+outputFile = "valid-wildlife04-sp-clouds.txt"
+
 jpg = "jpg"
 
 noise = ['sp', 'addPoissonNoise']
@@ -21,8 +29,8 @@ weather = ['clouds', 'fog', 'corrupt-fog-sev01',
                             'corrupt-fog-sev05']
 # noise_weather = []
 exclude = ['lists-backup']
-# selectedDirs = ['clouds-sp_0.3']
-selectedDirs = ['cloud', 'fog', 'sp']
+selectedDirs = ['clouds', 'sp','clouds-sp_0.3']
+# selectedDirs = ['cloud', 'fog', 'sp']
 visitingDirs = []
 
 
